@@ -1,8 +1,8 @@
 #!/bin/bash
 URL="http://xkcd.com"
 SaveDir=/home/pi/Scripts/
-#To-do fix lastcomic (read nextline)
-#Find latest comic number and save as latCom (currently latest comic number -1)
+
+#Find latest comic number and save as latCom
 	if [ -f index.html ]; then
 	 rm index.html
 	fi
@@ -16,6 +16,7 @@ SaveDir=/home/pi/Scripts/
 	sed -i '$ s/.$//' latCom
 	rm foo index.html
 	LAT=$(<latCom)
+	((LAT++))
 
 for((i=1;i<=$LAT;++i)) do
 NUM=$i
