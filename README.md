@@ -1,3 +1,10 @@
 # my
 
-I put scripts, functions and other various things here.
+xkcdscrape
+  Downloads every xkcd comic and creates text file with URL, title and alternate title.
+  
+  #To-do
+    Fix text encoding.
+    
+.bashrc
+  Config file.
