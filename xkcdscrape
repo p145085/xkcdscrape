@@ -1,0 +1,55 @@
+#!/bin/bash
+URL="http://xkcd.com"
+SaveDir=/home/pi/Scripts/
+#To-do fix lastcomic (read nextline)
+#Find latest comic number and save as latCom (currently latest comic number -1)
+	if [ -f index.html ]; then
+	 rm index.html
+	fi
+	if [ -f latCom ]; then
+	 rm latCom
+	fi
+	wget $URL
+	sed -n 's/.*<a rel="prev" href="\([^"]*\)".*/\1/p' index.html >> foo
+	sed -r 's/^.{1}//' foo >> latCom
+	sed -i '1d' latCom
+	sed -i '$ s/.$//' latCom
+	rm foo index.html
+	LAT=$(<latCom)
+
+for((i=1;i<=$LAT;++i)) do
+NUM=$i
+
+if [ ! -d $SaveDir/"$NUM" ]; then
+mkdir $SaveDir/"$NUM"
+
+wget $URL/$NUM/
+
+#Extract div id comic
+sed -n '/<div id=\"comic\">/,/<\/div>/p' index.html >> theDiv
+#Extract image url
+sed -n 's/.*<img src="\([^"]*\)".*/\1/p' theDiv >> theImg
+#Extract title of comic
+sed -n 's/.*title="\([^"]*\)".*/\1/p' theDiv >> theTit
+#Extract alt of comic
+sed -n 's/.*alt="\([^"]*\)".*/\1/p' theDiv >> theAlt
+
+#Remove the // from image url(why)
+sed -r 's/^.{2}//' theImg >> ImgUrl
+
+#Download list of URLs
+wget -P/$SaveDir/$NUM -i ImgUrl -o wgetlog
+
+echo "Downloaded from: " >> file_info
+cat ImgUrl >> file_info
+echo -e "\nTitle: " >> file_info
+cat theTit >> file_info
+echo -e "\nAlternate: " >> file_info
+cat theAlt >> file_info
+
+rm theDiv theImg theTit theAlt ImgUrl index.html
+mv file_info $SaveDir/$NUM
+mv wgetlog $SaveDir/$NUM
+
+fi
+done
