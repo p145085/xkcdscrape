@@ -5,6 +5,3 @@ xkcdscrape
   
   #To-do
     Fix text encoding.
-    
-.bashrc
-  Config file.
