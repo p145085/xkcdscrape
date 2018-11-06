@@ -31,4 +31,6 @@
   j++: Multiple connected device(s), keyboard hotkey(s) for switching between PC 1 & PC 2.
 
   k. Alien adoption agency / Pokémon GO / Google Maps: Game design with intent of outdoorsy stuff.
-Gain access to local messageboard(s). i.e : Hang out in the local café for two hours and receive perks, access to player-guild(s). Servable as incentive for anxiety stricken players. 
+Gain access to local messageboard(s). i.e : Hang out in the local café for two hours and receive perks, access to player-guild(s). Servable as incentive for anxiety stricken players.
+
+  l. Twitch chat plugin integration for querying streamer for one new single frame of current webcam. 
