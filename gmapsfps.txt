@@ -1,0 +1,4 @@
+https://medium.com/google-earth/see-a-map-of-3d-coverage-in-google-earth-bb9f22e204c4
+
+Quake PQL movement in 3d mapped areas on top of Google Maps.
+Modification for gamemode to be played as Spiderman. [i.e : Grapplehook].
