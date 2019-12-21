@@ -34,3 +34,5 @@
 Gain access to local messageboard(s). i.e : Hang out in the local café for two hours and receive perks, access to player-guild(s). Servable as incentive for anxiety stricken players.
 
   l. Clickable Chrometabs which opens a 'folder'. 
+  
+  m. Blizzard's Overwatch RAM access for connection Spotify and Overwatch.exe between. Such that specific playlists are played depending on what Map/Level is being played on Overwatch.
