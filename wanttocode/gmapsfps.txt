@@ -1,4 +1,10 @@
 https://medium.com/google-earth/see-a-map-of-3d-coverage-in-google-earth-bb9f22e204c4
 
+"Google Earth is one of the world’s most comprehensive 3D maps out there."
+
+I would like to jump around like in Quake CPM/PQL but in real-life areas on top of Google Earth.
+
 Quake PQL movement in 3d mapped areas on top of Google Maps.
-Modification for gamemode to be played as Spiderman. [i.e : Grapplehook].
+
+For 3D mapped areas, introduce Spiderman mode.
+[i.e : Grapplehook].

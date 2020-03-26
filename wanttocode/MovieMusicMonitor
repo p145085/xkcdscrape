@@ -1,0 +1,9 @@
+  h. Bandcamp/IMDB wishlist monitor/scavenger. Retrieves user wishlist, checks what albums / ind. songs are free-to-download and downloads all available, checks for duplicate in destination folder, updates log-file/status-file on what albums were and weren't available.
+
+  Some Bandcamp sites have their music available for download.
+  Check if that is true for each individual item in a user's wishlist.
+  Return downloadable tracks to user and report on what was and wasn't available.
+
+  (Larger project) IMDB
+  To-do: Find large legal streaming websites with full movies.
+  Same process as Bandcamp monitor.
