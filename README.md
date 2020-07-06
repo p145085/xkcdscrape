@@ -24,3 +24,5 @@ Google maps/earth points of interests as messageboards ingame.
   (I.e current chrometabs but onClick a dropdown list shows.)  
 
   g. Blizzard's Overwatch RAM access for connection Spotify and Overwatch.exe between. Such that specific playlists are played depending on what Map/Level is being played on Overwatch.
+
+ h. Notepad++ or other text-editor with the capability of images. Much like how Microsoft Word allows images, but for notepad++.
