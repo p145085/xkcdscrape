@@ -1,7 +1,0 @@
-Endgoal: Button on Twitch streamer-player for turning streamer-persons music on / off.
-Need: Virtual Audio Cables in streamer-software. 
-
-Twitch browser addon/plugin on top of the stream applet in the browser for choosing between music on / off (assuming streamer has separate channels for music/voip).
-
-OBS Plugin to let user set a virtual audio cable for their music.
-Twitch plugin to let user turn on / off streamer's music.
